@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges - Javascript Basic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Challenges - Javascript Basic</h1>
+        <div id="Exercise1">
+            <h2>Multiplication, division, and comparison operators</h2>
+            <div class="exerciseProblem">
+                <p>
+                    // Write a function that takes two numbers, say a and b, as arguments.
+                    <br>
+                    // If a is smaller than b, divide a by b
+                    <br>
+                    // Otherwise, multiply both numbers
+                    <br>
+                    // Return the resulting value
+                    <br>
+                </p>
+            </div>
+            <div class="tablaEjemplos">
+                <div class="columnaProblem">
+                    <h4>Example</h4>
+                    <ul>myFunction(10, 100)</ul>
+                    <ul>myFunction(90, 45)</ul>
+                    <ul>myFunction(8, 20)</ul>
+                    <ul>myFunction(2, 0.5)</ul>
+                </div>
+                <div class="resolucionProblem">
+                    <h4>Solution</h4>
+                    <ul>0.1</ul>
+                    <ul>4050</ul>
+                    <ul>0.4</ul>
+                    <ul>1</ul>
+                </div>
+            </div>
+            <div class="resolucionExercise">
+                <h4>Resolution</h4>
+                <p>function myFunction1(a, b) {
+                    <br>
+                    return a < b ? a / b : a * b <br>
+                        }
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div id="Exercise2">
+            <h2>Check if a number is even</h2>
+            <div class="exerciseProblem">
+                <p>
+                    // Write a function that takes a number as argument
+                    <br>
+                    // If the number is even, return true
+                    <br>
+                    // Otherwise, return false
+                </p>
+            </div>
+            <div class="tablaEjemplos">
+                <div class="columnaProblem">
+                    <h4>Example</h4>
+                    <ul>myFunction(10)</ul>
+                    <ul>myFunction(-4)</ul>
+                    <ul>myFunction(5)</ul>
+                    <ul>myFunction(-111)</ul>
+                </div>
+                <div class="resolucionProblem">
+                    <h4>Solution</h4>
+                    <ul>true</ul>
+                    <ul>true</ul>
+                    <ul>false</ul>
+                    <ul>false</ul>
+                </div>
+            </div>
+            <div class="resolucionExercise">
+                <h4>Resolution</h4>
+                <p>function myFunction2(a) {
+                    <br>
+                    return a % 2 === 0
+                    <br>
+                    }
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div id="Exercise3">
+            <h2>Comparison operators, strict equality</h2>
+            <div class="exerciseProblem">
+                <p>
+                    // Write a function that takes two values, say a and b, as arguments
+                    <br>
+                    // Return true if the two values are equal and of the same type
+                </p>
+            </div>
+            <div class="tablaEjemplos">
+                <div class="columnaProblem">
+                    <h4>Example</h4>
+                    <ul>myFunction(2, 3)</ul>
+                    <ul>myFunction(3, 3)</ul>
+                    <ul>myFunction(1, '1')</ul>
+                    <ul>myFunction('10', '10')</ul>
+                </div>
+                <div class="resolucionProblem">
+                    <h4>Solution</h4>
+                    <ul>false</ul>
+                    <ul>true</ul>
+                    <ul>false</ul>
+                    <ul>true</ul>
+                </div>
+            </div>
+            <div class="resolucionExercise">
+                <h4>Resolution</h4>
+                <p>function myFunction3(a,b) {
+                    <br>
+                    return a % 2 === 0
+                    <br>
+                    }
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div id="Exercise4">
+            <h2>Check if a number is a whole number</h2>
+            <div class="exerciseProblem">
+                <p>
+                    // Write a function that takes a number as argument
+                    <br>
+                    // If the number is a whole number (has no decimal place), return true
+                    <br>
+                    // Otherwise, return false
+                    <br>
+                </p>
+            </div>
+            <div class="tablaEjemplos">
+                <div class="columnaProblem">
+                    <h4>Example</h4>
+                    <ul>myFunction(4)</ul>
+                    <ul>myFunction(1.123)</ul>
+                    <ul>myFunction(1048)</ul>
+                    <ul>myFunction(10.48)</ul>
+                </div>
+                <div class="resolucionProblem">
+                    <h4>Solution</h4>
+                    <ul>true</ul>
+                    <ul>false</ul>
+                    <ul>true</ul>
+                    <ul>false</ul>
+                </div>
+            </div>
+            <div class="resolucionExercise">
+                <h4>Resolution</h4>
+                <p>function myFunction4(a) {
+                    <br>
+                    return Number.isInteger(a)
+                    <br>
+                    }
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div id="Exercise5">
+            <h2>Check whether a string contains another string and concatenate</h2>
+            <div class="exerciseProblem">
+                <p>
+                    // Write a function that takes two strings, say a and b, as arguments
+                    <br>
+                    // If a contains b, append b to the beginning of a
+                    <br>
+                    // If not, append it to the end
+                    <br>
+                    // Return the concatenation
+                    <br>
+                </p>
+            </div>
+            <div class="tablaEjemplos">
+                <div class="columnaProblem">
+                    <h4>Example</h4>
+                    <ul>myFunction("cheese", "cake")</ul>
+                    <ul>myFunction("lips", "s")</ul>
+                    <ul>myFunction("Java", "script")</ul>
+                    <ul>myFunction(" think, therefore I am","I")</ul>
+                </div>
+                <div class="resolucionProblem">
+                    <h4>Solution</h4>
+                    <ul>"cheesecake"</ul>
+                    <ul>"slips"</ul>
+                    <ul>"Javascript"</ul>
+                    <ul>"I think, therefore I am"</ul>
+                </div>
+            </div>
+            <div class="resolucionExercise">
+                <h4>Resolution</h4>
+                <p>function myFunction5(a) {
+                    <br>
+                    return a.indexOf(b) === -1 ? a + b : b + a
+                    <br>
+                    }
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div id="Exercise6">
+            <h2>Find the correct word by incrementing letters in alphabet</h2>
+            <div class="exerciseProblem">
+                <p>
+                    // Write a function that takes a string as argument
+                    <br>
+                    // As it is, the string has no meaning
+                    <br>
+                    // Increment each letter to the next letter in the alphabet
+                    <br>
+                    // Return the correct word
+                    <br>
+                </p>
+            </div>
+            <div class="tablaEjemplos">
+                <div class="columnaProblem">
+                    <h4>Example</h4>
+                    <ul>myFunction('bnchmf')</ul>
+                    <ul>myFunction('bgddrd')</ul>
+                    <ul>myFunction('sdrshmf')</ul>
+                </div>
+                <div class="resolucionProblem">
+                    <h4>Solution</h4>
+                    <ul>'coding'</ul>
+                    <ul>'cheese'</ul>
+                    <ul>'testing'</ul>
+                </div>
+            </div>
+            <div class="resolucionExercise">
+                <h4>Resolution</h4>
+                <p>function myFunction6(a) {
+                    <br>
+                    let newString = ""
+                    <br>
+                    for ( let i=0 ; i < string.length ; i++ ) { <br>
+                        let auxChar=string.charCodeAt (i) auxChar=auxChar + 1
+                        <br>
+                        newString=newString + String.fromCharCode(auxChar) }
+                        <br>
+                        return newString
+                        <br>
+                        }
+                </p>
+                <br>
+                <h4>Resolution II</h4>
+                <p>function myFunction6(a) {
+                    <br>
+                    const arr = [...str];
+                    <br>
+                    const correctedArray = arr.map(e => String.fromCharCode(e.charCodeAt()+1));
+                    <br>
+                    return correctedArray.join('');
+                    <br>
+                    }
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div id="Exercise7">
+            <h2>Find next higher natural number that is divisble by y</h2>
+            <div class="exerciseProblem">
+                <p>
+                    // Write a function that takes two numbers, say x and y, as arguments
+                    <br>
+                    // Check if x is divisible by y
+                    <br>
+                    // If yes, return x
+                    <br>
+                    // If not, return the next higher natural number that is divisible by y
+                    <br>
+                </p>
+            </div>
+            <div class="tablaEjemplos">
+                <div class="columnaProblem">
+                    <h4>Example</h4>
+                    <ul>myFunction(1, 23)</ul>
+                    <ul>myFunction(23, 23)</ul>
+                    <ul>myFunction(7, 3)</ul>
+                    <ul>myFunction(-5, 7)</ul>
+                </div>
+                <div class="resolucionProblem">
+                    <h4>Solution</h4>
+                    <ul>23</ul>
+                    <ul>23</ul>
+                    <ul>9</ul>
+                    <ul>0</ul>
+                </div>
+            </div>
+            <div class="resolucionExercise">
+                <h4>Resolution</h4>
+                <p>function myFunction7(x, y) {
+                    <br>
+                    if (x % y == 0) {
+                    <br>
+                    return x ;
+                    <br>
+                    } else if (x < 0) { <br>
+                        return 0 ;
+                        <br>
+                        } else if (x < y) { <br>
+                            return y ;
+                            <br>
+                            } else {
+                            <br>
+                            return x + ( y - ( x % y )) ;
+                            <br>
+                            }}
+                            <br>
+                </p>
+                <br>
+                <h4>Resolution II</h4>
+                <p>function myFunction6(a) {
+                    <br>
+                    while (x % y !== 0) x++;
+                    <br>
+                    return x;
+                    }
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div id="Exercise8">
+            <h2>Return the percentage of a number</h2>
+            <div class="exerciseProblem">
+                <p>
+                    // Write a function that takes an object with the properties number and percentage as argument
+                    <br>
+                    // Return the given percentage of the number
+                    <br>
+                </p>
+            </div>
+            <div class="tablaEjemplos">
+                <div class="columnaProblem">
+                    <h4>Example</h4>
+                    <ul>myFunction({number: 100, percentage: 50})</ul>
+                    <ul>myFunction({number: 777, percentage: 2})</ul>
+                    <ul>myFunction({number: 500, percentage: 99})</ul>
+                </div>
+                <div class="resolucionProblem">
+                    <h4>Solution</h4>
+                    <ul>50</ul>
+                    <ul>15.54</ul>
+                    <ul>495</ul>
+                </div>
+            </div>
+            <div class="resolucionExercise">
+                <h4>Resolution</h4>
+                <p>function myFunction8 ({number: a, percentage: b}) {
+                    <br>
+                    return b * a / 100
+                    <br>
+                    }
+                    <br>
+                </p>
+                <br>
+            </div>
+        </div>
+        <hr>
+        <div id="Exercise9">
+            <h2>Split a number into its digits</h2>
+            <div class="exerciseProblem">
+                <p>
+                    // Write a function that takes a number as argument
+                    <br>
+                    // The function should split the number into its individual digits and return them in an array
+                    <br>
+                    // Tipp: you might want to change the type of the number for the splitting
+                </p>
+            </div>
+            <div class="tablaEjemplos">
+                <div class="columnaProblem">
+                    <h4>Example</h4>
+                    <ul>myFunction(10)</ul>
+                    <ul>myFunction(931)</ul>
+                    <ul>myFunction(193278)</ul>
+                </div>
+                <div class="resolucionProblem">
+                    <h4>Solution</h4>
+                    <ul>[1,0]</ul>
+                    <ul>[9,3,1]</ul>
+                    <ul>[1,9,3,2,7,8]</ul>
+                </div>
+            </div>
+            <div class="resolucionExercise">
+                <h4>Resolution</h4>
+                <p>function myFunction9( number ) {
+                    <br>
+                    let string = number.toString();
+                    <br>
+                    let array = [...string];
+                    <br>
+                    return array.map ( e => parseInt(e))
+                    <br>
+                    }
+                    <br>
+                </p>
+                <br>
+                <h4>Resolution II</h4>
+                <p>function myFunction9(num) {
+                    <br>
+                    const string = num + '';
+                    <br>
+                    const strings = string.split('');
+                    <br>
+                    return strings.map(digit => Number(digit))
+                    <br>
+                    }
+                    <br>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div id="Exercise10">
+            <h2>Clear up the chaos behind these strings</h2>
+            <div class="exerciseProblem">
+                <p>
+                    // It seems like something happened to these strings
+                    <br>
+                    // Can you figure out how to clear up the chaos?
+                    <br>
+                    // Write a function that joins these strings together such that they form the words 'Javascript',
+                    'Countryside', and 'Downtown'!
+                    <br>
+                    // You might want to apply basic JS string methods such as replace(), split(), slice() etc
+                    <br>
+                </p>
+            </div>
+            <div class="tablaEjemplos">
+                <div class="columnaProblem">
+                    <h4>Example</h4>
+                    <ul>myFunction('java', 'tpi%rcs')</ul>
+                    <ul>myFunction('c%ountry', 'edis')</ul>
+                    <ul>myFunction('down', 'nw%ot')</ul>
+                </div>
+                <div class="resolucionProblem">
+                    <h4>Solution</h4>
+                    <ul>'Javascript'</ul>
+                    <ul>'Countryside'</ul>
+                    <ul>'Downtown'</ul>
+                </div>
+            </div>
+            <div class="resolucionExercise">
+                <h4>Resolution</h4>
+                <p>function myFunction10(uno, dos) {
+                    <br>
+                    uno = uno.replaceAll('%','');
+                    <br>
+                    dos = dos.replaceAll('%','');
+                    <br>
+                    let newCharUno = '';
+                    <br>
+                    let newCharDos = '';
+                    <br>
+                    let inicio = dos.length - 1;
+                    <br>
+                    <!-- /* Recorro primer palabra */  -->
+                    <br>
+                    for (let i = 0; i < uno.length ; i++ ) { <br>
+                        if (i==0) {
+                        <br>
+                        newCharUno = newCharUno + uno.charAt(i).toUpperCase();
+                        <br>
+                        } else {
+                        <br>
+                        newCharUno = newCharUno + uno.charAt(i);}
+                        <br>
+                        }
+                        <br>
+                        <!-- /* Recorro segunda palabra */  -->
+                        <br>
+                        for (let j = inicio; j > -1 ; j-- ) {
+                        <br>
+                        newCharDos = newCharDos + dos.charAt(j);
+                        <br>
+                        }
+                        <br>
+                        return newCharUno + newCharDos;
+                        <br>
+                        }
+                        <br>
+                </p>
+                <br>
+                <h4>Resolution II</h4>
+                <p>function myFunction10(a, b) {
+                    <br>
+                    const first = a.split('').map(part => part.replace('%', '')).join('');
+                    <br>
+                    const second = b.split('').reverse().map(part => part.replace('%', '')).join('');
+                    <br>
+                    return first.charAt(0).toUpperCase() + first.slice(1) + second
+                    <br>
+                    }
+                    <br>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div id="Exercise11">
+            <h2>Round a number to 2 decimal places</h2>
+            <div class="exerciseProblem">
+                <p>
+                    // Write a function that takes a number as argument
+                    <br>
+                    // Round the number to the 2nd digit after the comma
+                    <br>
+                    // Return the rounded number
+                </p>
+            </div>
+            <div class="tablaEjemplos">
+                <div class="columnaProblem">
+                    <h4>Example</h4>
+                    <ul>myFunction(2.12397)</ul>
+                    <ul>mmyFunction(3.136)</ul>
+                    <ul>myFunction(1.12397)</ul>
+                    <ul>myFunction(26.1379)</ul>
+                </div>
+                <div class="resolucionProblem">
+                    <h4>Solution</h4>
+                    <ul>2.12</ul>
+                    <ul>3.14</ul>
+                    <ul>1.12</ul>
+                    <ul>26.14</ul>
+                </div>
+            </div>
+            <div class="resolucionExercise">
+                <h4>Resolution</h4>
+                <p>function myFunction9( number ) {
+                    <br>
+                    let string = number.toString();
+                    <br>
+                    let array = [...string];
+                    <br>
+                    return array.map ( e => parseInt(e))
+                    <br>
+                    }
+                    <br>
+                </p>
+                <br>
+                <h4>Resolution II</h4>
+                <p>function myFunction9(num) {
+                    <br>
+                    const string = num + '';
+                    <br>
+                    const strings = string.split('');
+                    <br>
+                    return strings.map(digit => Number(digit))
+                    <br>
+                    }
+                    <br>
+                </p>
+            </div>
+        </div>
+        <hr>        
+    </main>
+    <footer>| Copyright© - Derechos reservados 2021 | fedelopez89 |</footer>
+</body>
+
+</html>

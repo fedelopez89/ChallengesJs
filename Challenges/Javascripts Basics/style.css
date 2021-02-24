@@ -1,0 +1,85 @@
+* {
+    margin: 0; padding: 0; box-sizing: content-box;
+}
+
+body {
+    background-color: yellowgreen;
+}
+
+main {
+    background-color: white;
+    padding: 2%;
+    font-family: 'Abel',Helvetica,Arial,Lucida,sans-serif;
+    color: black;
+    margin: 2% auto;
+    width: 88%;
+    border: 1px black solid;    
+}
+
+h1 {
+    margin-bottom: 2%;
+    text-decoration: underline;
+}
+
+h2 {
+    margin: 2% 0% 1%;
+}
+
+.tablaEjemplos {
+    margin: 2% 0;
+    width: 90%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.columnaProblem {
+    width: 70%;
+    border: 3px blue solid;
+}
+
+.columnaProblem ul {
+    padding-left: 5%;
+    border: 1px black solid;
+}
+
+.resolucionProblem {
+    width: 30%;
+    border: 5px yellow solid;
+}
+
+.resolucionProblem ul {
+    border: 1px black solid;
+    text-align: center;
+}
+
+.resolucionExercise {
+    margin-bottom: 2%;
+}
+
+.tablaEjemplos h4 {
+    background-color: rgb(228, 228, 228);
+    border: 1px black solid;
+    text-align: center;
+}
+
+.resolucionExercise h4 {
+    margin-bottom: 0.5%;
+    text-transform: uppercase;
+}
+
+.resolucionExercise p {
+    color: red;
+    font-weight: bold;
+}
+
+footer {
+    height: 5%;
+    line-height: 35px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+}
