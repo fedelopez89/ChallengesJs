@@ -721,20 +721,63 @@
             <div class="resolucionExercise">
                 <div class="resolucion">
                     <h4>Resolution</h4>
-                    <p>function myFunction12(char, string2) {
+                    <p>function myFunction(num) {
                         <br>
-                        return string2.split("").filter( carac => carac==char || carac==char.toUpperCase()).length
+                        return esPrimo(num)? num : proximoPrimo(num);
                         <br>
+                       function esPrimo(num) {
+                           <br>
+                            let cantDivisores = 0;
+                            <br>
+                            for (let i = 0; i<=num ; i++) {
+                                <br>
+                                (num%i===0)? ++cantDivisores: 0;
+                                <br>
+                            }
+                            <br>
+                            return (cantDivisores==2||num==1);
+                            <br>
                         }
+                        <br>
+                        function proximoPrimo(num) {
+                            <br>
+                            while (!esPrimo(num)) {
+                                <br>
+                                ++num;
+                                <br>
+                            }
+                            <br>
+                            return num;
+                            <br>
+                        }
+                        <br>
+                    }
                     </p>
                 </div>
                 <div class="resolucion">
                     <h4>Resolution II</h4>
-                    <p>function myFunction12(char, string) {
+                    <p>function myFunction( input ) {
                         <br>
-                        return string.toLowerCase().split(char).length - 1
-                        <br>
+                        function isPrime(num) {
+                            <br>
+                          for (let i = 2; i <= Math.sqrt(num); i++) {
+                              <br>
+                            if (num % i === 0) return false;
+                            <br>
+                          }
+                          <br>
+                          return num > 1;
+                          <br>
                         }
+                        <br>
+                       let n = input;
+                       <br>
+                       while (!isPrime(n)) n++;
+                       <br>
+                      return n
+                      <br>
+                      }
+                      <br>
                     </p>
                 </div>
             </div>
