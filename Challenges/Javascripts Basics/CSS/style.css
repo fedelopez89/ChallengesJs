@@ -3,14 +3,15 @@
 }
 
 body {
-    background-color: yellowgreen;
+/*     background-color: lightblue;     */
+    background-color: #fff761;
+
+    counter-reset: contador_titulo;
 }
 
 main {
-    counter-reset: contador;
     background-color: white;
-    padding-top: 2%;
-    padding-left: 2%;
+    padding: 2%;
     padding-bottom: 25%;
     font-family: 'Abel',Helvetica,Arial,Lucida,sans-serif;
     color: black;
@@ -19,22 +20,60 @@ main {
     border: 1px black solid;
 }
 
-#indice {
-    counter-reset: contador_titulo;
-    margin: 10% 0 20% 2%;
+main h1 {
+    /* Titulo principal */
+    margin-top: 2%;
+    margin-bottom: 6%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
-#indice ol {
+#opcionesMenu {
+    background-color: rgb(253, 250, 199);
+    margin-bottom: 5%;
+    height: 2.5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+#opcionesMenu ol {
+    font-weight: bolder;
+    font-variant: small-caps;
+    width: 100%;
+    height: 100%;
+    line-height: 2em;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.indice {
+    counter-reset: contador;
+    margin-bottom: 20%;
+}
+
+.indice ol {
     line-height: 1.75em;
 }
 
-#indice ol::before {
+.indice ol::before {
     width: 20px;
     display: inline-block;
     counter-increment: contador;
     content: counter(contador) ") ";
     margin: 0 1%;
     text-align: right;
+}
+
+a:link, a:visited  {
+    color: #00458b;
+    text-decoration: none;
+}
+
+h3 {
+    margin-bottom: 2%;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 
 .Ejercicio {
@@ -49,20 +88,6 @@ main {
 .Ejercicio h2::before {
     counter-increment: contador_titulo;
     content: counter(contador_titulo) ") ";
-}
-
-/* Titulo principal */
-h1 {
-    margin: 2%;
-    text-align: center;
-    text-decoration: underline;
-}
-
-/* Título Indice */
-h3 {
-    margin-bottom: 2%;
-    text-decoration: underline;
-    text-transform: uppercase;
 }
 
 .tablaEjemplos {
@@ -127,7 +152,7 @@ footer {
     line-height: 35px;
     width: 100%;
     color: white;
-    background-color: black;
+    background-color: #212121;
     text-align: center;
     position: fixed;
     bottom: 0px;

@@ -12,780 +12,1381 @@
 <body>
     <a name="Menu"></a>
     <main>
-        <h1></a>Challenges - Javascript Basic</a></h1>
-        <div id="indice">
-            <h3>index</h3>
-            <ol><a href="#E1">Multiplication, division, and comparison operators</a></ol>
-            <ol><a href="#E2">Check if a number is even</a></ol>
-            <ol><a href="#E3">Comparison operators, strict equality</a></ol>
-            <ol><a href="#E4">Check if a number is a whole number</a></ol>
-            <ol><a href="#E5">Check whether a string contains another string and concatenate</a></ol>
-            <ol><a href="#E6">Find the correct word by incrementing letters in alphabet</a></ol>
-            <ol><a href="#E7">Find next higher natural number that is divisble by y</a></ol>
-            <ol><a href="#E8">Return the percentage of a number</a></ol>
-            <ol><a href="#E9">Split a number into its digits</a></ol>
-            <ol><a href="#E10">Clear up the chaos behind these strings</a></ol>
-            <ol><a href="#E11">Round a number to 2 decimal places</a></ol>
-            <ol><a href="#E12">How many times does a character occur?</a></ol>
-            <ol><a href="#E13">Return the next higher prime number</a></ol>
+        <h1></a>Challenges - Javascript</a></h1>
+        <menu>
+            <div id="opcionesMenu">
+                <ol id="menuBasic"><a href="#Basic">Basic</a></ol>
+                <ol id="menuArray"><a href="#Array">Array</a></ol>
+                <ol id="menuDates">Dates</ol>
+                <ol id="menuObjects">Objects</ol>
+                <ol id="menuSets">Sets</ol>
+            </div>
+        </menu>
+        <h3 name='Basic'>index</h3>
+        <!-- INDEX BASIC -->
+        <div class="tipoChallenge">
+            <div class="indice">
+                <ol><a href="#E1">Multiplication, division, and comparison operators</a></ol>
+                <ol><a href="#E2">Check if a number is even</a></ol>
+                <ol><a href="#E3">Comparison operators, strict equality</a></ol>
+                <ol><a href="#E4">Check if a number is a whole number</a></ol>
+                <ol><a href="#E5">Check whether a string contains another string and concatenate</a></ol>
+                <ol><a href="#E6">Find the correct word by incrementing letters in alphabet</a></ol>
+                <ol><a href="#E7">Find next higher natural number that is divisble by y</a></ol>
+                <ol><a href="#E8">Return the percentage of a number</a></ol>
+                <ol><a href="#E9">Split a number into its digits</a></ol>
+                <ol><a href="#E10">Clear up the chaos behind these strings</a></ol>
+                <ol><a href="#E11">Round a number to 2 decimal places</a></ol>
+                <ol><a href="#E12">How many times does a character occur?</a></ol>
+                <ol><a href="#E13">Return the next higher prime number</a></ol>
+            </div>
+        </div>
+        <!-- INDEX ARRAY -->
+        <div class="tipoChallenge">
+            <div class="indice">
+                <ol><a href="#AE1">Sort an array of strings alphabetically</a></ol>
+                <ol><a href="#AE2">Sort an array of numbers in descending order</a></ol>
+                <ol><a href="#AE3">Return the average of an array of numbers</a></ol>
+                <ol><a href="#AE4">Remove a specific array element</a></ol>
+                <ol><a href="#AE5">Check if all array elements are equal</a></ol>
+                <ol><a href="#AE6">Return last n array elements</a></ol>
+                <ol><a href="#AE7">Create a range of numbers</a></ol>
+                <ol><a href="#AE8">Return last n array elements</a></ol>
+                <ol><a href="#AE9">Return the longest string from an array of strings</a></ol>
+                <ol><a href="#AE10">Sum up all array elements with values greater than</a></ol>
+                <ol><a href="#AE11">Merge an arbitrary number of arrays</a></ol>
+                <ol><a href="#AE12">Merge two arrays with duplicate values</a></ol>
+            </div>
         </div>
         <hr>
-        <!-- Ejercicio 1 -->
-        <div class="Ejercicio">
-            <a name="E1"></a>
-            <h2>Multiplication, division, and comparison operators</h2>
-            <div class="exerciseProblem">
-                <p>
-                    // Write a function that takes two numbers, say a and b, as arguments.
-                    <br>
-                    // If a is smaller than b, divide a by b
-                    <br>
-                    // Otherwise, multiply both numbers
-                    <br>
-                    // Return the resulting value
-                    <br>
-                </p>
-            </div>
-            <div class="tablaEjemplos">
-                <div class="columnaProblem">
-                    <h4>Example</h4>
-                    <ol>myFunction(10, 100)</ol>
-                    <ol>myFunction(90, 45)</ol>
-                    <ol>myFunction(8, 20)</ol>
-                    <ol>myFunction(2, 0.5)</ol>
-                </div>
-                <div class="resolucionProblem">
-                    <h4>Solution</h4>
-                    <ol>0.1</ol>
-                    <ol>4050</ol>
-                    <ol>0.4</ol>
-                    <ol>1</ol>
-                </div>
-            </div>
-            <div class="resolucionExercise">
-                <div class="resolucion">
-                    <h4>Resolution</h4>
-                    <p>function myFunction1(a, b) {
+        <!-- EXERCISE BASIC -->
+        <div id="exerciseBasic">
+            <!-- Ejercicio 1 -->
+            <div class="Ejercicio">
+                <a name="E1"></a>
+                <h2>Multiplication, division, and comparison operators</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes two numbers, say a and b, as arguments.
                         <br>
-                        return a < b ? a / b : a * b <br>
-                            }
+                        // If a is smaller than b, divide a by b
+                        <br>
+                        // Otherwise, multiply both numbers
+                        <br>
+                        // Return the resulting value
+                        <br>
                     </p>
                 </div>
-            </div>
-            <p><a href="#Menu">Volver al menú</a></p>
-        </div>
-        <hr>
-        <!-- Ejercicio 2 -->
-        <div class="Ejercicio">
-            <a name="E2"></a>
-            <h2>Check if a number is even</h2>
-            <div class="exerciseProblem">
-                <p>
-                    // Write a function that takes a number as argument
-                    <br>
-                    // If the number is even, return true
-                    <br>
-                    // Otherwise, return false
-                </p>
-            </div>
-            <div class="tablaEjemplos">
-                <div class="columnaProblem">
-                    <h4>Example</h4>
-                    <ol>myFunction(10)</ol>
-                    <ol>myFunction(-4)</ol>
-                    <ol>myFunction(5)</ol>
-                    <ol>myFunction(-111)</ol>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction(10, 100)</ol>
+                        <ol>myFunction(90, 45)</ol>
+                        <ol>myFunction(8, 20)</ol>
+                        <ol>myFunction(2, 0.5)</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>0.1</ol>
+                        <ol>4050</ol>
+                        <ol>0.4</ol>
+                        <ol>1</ol>
+                    </div>
                 </div>
-                <div class="resolucionProblem">
-                    <h4>Solution</h4>
-                    <ol>true</ol>
-                    <ol>true</ol>
-                    <ol>false</ol>
-                    <ol>false</ol>
-                </div>
-            </div>
-            <div class="resolucionExercise">
-                <div class="resolucion">
-                    <h4>Resolution</h4>
-                    <p>function myFunction2(a) {
-                        <br>
-                        return a % 2 === 0
-                        <br>
-                        }
-                    </p>
-                </div>
-            </div>
-            <p><a href="#Menu">Volver al menú</a></p>
-        </div>
-        <hr>
-        <!-- Ejercicio 3 -->
-        <div class="Ejercicio">
-            <a name="E3"></a>
-            <h2>Comparison operators, strict equality</h2>
-            <div class="exerciseProblem">
-                <p>
-                    // Write a function that takes two values, say a and b, as arguments
-                    <br>
-                    // Return true if the two values are equal and of the same type
-                </p>
-            </div>
-            <div class="tablaEjemplos">
-                <div class="columnaProblem">
-                    <h4>Example</h4>
-                    <ol>myFunction(2, 3)</ol>
-                    <ol>myFunction(3, 3)</ol>
-                    <ol>myFunction(1, '1')</ol>
-                    <ol>myFunction('10', '10')</ol>
-                </div>
-                <div class="resolucionProblem">
-                    <h4>Solution</h4>
-                    <ol>false</ol>
-                    <ol>true</ol>
-                    <ol>false</ol>
-                    <ol>true</ol>
-                </div>
-            </div>
-            <div class="resolucionExercise">
-                <div class="resolucion">
-                    <h4>Resolution</h4>
-                    <p>function myFunction3(a,b) {
-                        <br>
-                        return a % 2 === 0
-                        <br>
-                        }
-                    </p>
-                </div>
-            </div>
-            <p><a href="#Menu">Volver al menú</a></p>
-        </div>
-        <hr>
-        <!-- Ejercicio 4 -->
-        <div class="Ejercicio">
-            <a name="E4"></a>
-            <h2>Check if a number is a whole number</h2>
-            <div class="exerciseProblem">
-                <p>
-                    // Write a function that takes a number as argument
-                    <br>
-                    // If the number is a whole number (has no decimal place), return true
-                    <br>
-                    // Otherwise, return false
-                    <br>
-                </p>
-            </div>
-            <div class="tablaEjemplos">
-                <div class="columnaProblem">
-                    <h4>Example</h4>
-                    <ol>myFunction(4)</ol>
-                    <ol>myFunction(1.123)</ol>
-                    <ol>myFunction(1048)</ol>
-                    <ol>myFunction(10.48)</ol>
-                </div>
-                <div class="resolucionProblem">
-                    <h4>Solution</h4>
-                    <ol>true</ol>
-                    <ol>false</ol>
-                    <ol>true</ol>
-                    <ol>false</ol>
-                </div>
-            </div>
-            <div class="resolucionExercise">
-                <div class="resolucion">
-                    <h4>Resolution</h4>
-                    <p>function myFunction4(a) {
-                        <br>
-                        return Number.isInteger(a)
-                        <br>
-                        }
-                    </p>
-                </div>
-            </div>
-            <p><a href="#Menu">Volver al menú</a></p>
-        </div>
-        <hr>
-        <!-- Ejercicio 5 -->
-        <div class="Ejercicio">
-            <a name="E5"></a>
-            <h2>Check whether a string contains another string and concatenate</h2>
-            <div class="exerciseProblem">
-                <p>
-                    // Write a function that takes two strings, say a and b, as arguments
-                    <br>
-                    // If a contains b, append b to the beginning of a
-                    <br>
-                    // If not, append it to the end
-                    <br>
-                    // Return the concatenation
-                    <br>
-                </p>
-            </div>
-            <div class="tablaEjemplos">
-                <div class="columnaProblem">
-                    <h4>Example</h4>
-                    <ol>myFunction("cheese", "cake")</ol>
-                    <ol>myFunction("lips", "s")</ol>
-                    <ol>myFunction("Java", "script")</ol>
-                    <ol>myFunction(" think, therefore I am","I")</ol>
-                </div>
-                <div class="resolucionProblem">
-                    <h4>Solution</h4>
-                    <ol>"cheesecake"</ol>
-                    <ol>"slips"</ol>
-                    <ol>"Javascript"</ol>
-                    <ol>"I think, therefore I am"</ol>
-                </div>
-            </div>
-            <div class="resolucionExercise">
-                <div class="resolucion">
-                    <h4>Resolution</h4>
-                    <p>function myFunction5(a) {
-                        <br>
-                        return a.indexOf(b) === -1 ? a + b : b + a
-                        <br>
-                        }
-                    </p>
-                </div>
-            </div>
-            <p><a href="#Menu">Volver al menú</a></p>
-        </div>
-        <hr>
-        <!-- Ejercicio 6 -->
-        <div class="Ejercicio">
-            <a name="E6"></a>
-            <h2>Find the correct word by incrementing letters in alphabet</h2>
-            <div class="exerciseProblem">
-                <p>
-                    // Write a function that takes a string as argument
-                    <br>
-                    // As it is, the string has no meaning
-                    <br>
-                    // Increment each letter to the next letter in the alphabet
-                    <br>
-                    // Return the correct word
-                    <br>
-                </p>
-            </div>
-            <div class="tablaEjemplos">
-                <div class="columnaProblem">
-                    <h4>Example</h4>
-                    <ol>myFunction('bnchmf')</ol>
-                    <ol>myFunction('bgddrd')</ol>
-                    <ol>myFunction('sdrshmf')</ol>
-                </div>
-                <div class="resolucionProblem">
-                    <h4>Solution</h4>
-                    <ol>'coding'</ol>
-                    <ol>'cheese'</ol>
-                    <ol>'testing'</ol>
-                </div>
-            </div>
-            <div class="resolucionExercise">
-                <div class="resolucion">
-                    <h4>Resolution</h4>
-                    <p>function myFunction6(a) {
-                        <br>
-                        let newString = ""
-                        <br>
-                        for ( let i=0 ; i < string.length ; i++ ) { <br>
-                            let auxChar=string.charCodeAt (i) auxChar=auxChar + 1
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <div id="basic_resol_01"></div>
+                        <p>function myFunction1(a, b) {
                             <br>
-                            newString=newString + String.fromCharCode(auxChar) }
+                            return a < b ? a / b : a * b <br>
+                                }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <hr>
+            <!-- Ejercicio 2 -->
+            <div class="Ejercicio">
+                <a name="E2"></a>
+                <h2>Check if a number is even</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes a number as argument
+                        <br>
+                        // If the number is even, return true
+                        <br>
+                        // Otherwise, return false
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction(10)</ol>
+                        <ol>myFunction(-4)</ol>
+                        <ol>myFunction(5)</ol>
+                        <ol>myFunction(-111)</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>true</ol>
+                        <ol>true</ol>
+                        <ol>false</ol>
+                        <ol>false</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction2(a) {
                             <br>
-                            return newString
+                            return a % 2 === 0
                             <br>
                             }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <hr>
+            <!-- Ejercicio 3 -->
+            <div class="Ejercicio">
+                <a name="E3"></a>
+                <h2>Comparison operators, strict equality</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes two values, say a and b, as arguments
+                        <br>
+                        // Return true if the two values are equal and of the same type
                     </p>
                 </div>
-                <div class="resolucion">
-                    <h4>Resolution II</h4>
-                    <p>function myFunction6(a) {
-                        <br>
-                        const arr = [...str];
-                        <br>
-                        const correctedArray = arr.map(e => String.fromCharCode(e.charCodeAt()+1));
-                        <br>
-                        return correctedArray.join('');
-                        <br>
-                        }
-                    </p>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction(2, 3)</ol>
+                        <ol>myFunction(3, 3)</ol>
+                        <ol>myFunction(1, '1')</ol>
+                        <ol>myFunction('10', '10')</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>false</ol>
+                        <ol>true</ol>
+                        <ol>false</ol>
+                        <ol>true</ol>
+                    </div>
                 </div>
-            </div>
-            <p><a href="#Menu">Volver al menú</a></p>
-        </div>
-        <hr>
-        <!-- Ejercicio 7 -->
-        <div class="Ejercicio">
-            <a name="E7"></a>
-            <h2>Find next higher natural number that is divisble by y</h2>
-            <div class="exerciseProblem">
-                <p>
-                    // Write a function that takes two numbers, say x and y, as arguments
-                    <br>
-                    // Check if x is divisible by y
-                    <br>
-                    // If yes, return x
-                    <br>
-                    // If not, return the next higher natural number that is divisible by y
-                    <br>
-                </p>
-            </div>
-            <div class="tablaEjemplos">
-                <div class="columnaProblem">
-                    <h4>Example</h4>
-                    <ol>myFunction(1, 23)</ol>
-                    <ol>myFunction(23, 23)</ol>
-                    <ol>myFunction(7, 3)</ol>
-                    <ol>myFunction(-5, 7)</ol>
-                </div>
-                <div class="resolucionProblem">
-                    <h4>Solution</h4>
-                    <ol>23</ol>
-                    <ol>23</ol>
-                    <ol>9</ol>
-                    <ol>0</ol>
-                </div>
-            </div>
-            <div class="resolucionExercise">
-                <div class="resolucion">
-                    <h4>Resolution</h4>
-                    <p>function myFunction7(x, y) {
-                        <br>
-                        if (x % y == 0) {
-                        <br>
-                        return x ;
-                        <br>
-                        } else if (x < 0) { <br>
-                            return 0 ;
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction3(a,b) {
                             <br>
-                            } else if (x < y) { <br>
-                                return y ;
+                            return a % 2 === 0
+                            <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <hr>
+            <!-- Ejercicio 4 -->
+            <div class="Ejercicio">
+                <a name="E4"></a>
+                <h2>Check if a number is a whole number</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes a number as argument
+                        <br>
+                        // If the number is a whole number (has no decimal place), return true
+                        <br>
+                        // Otherwise, return false
+                        <br>
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction(4)</ol>
+                        <ol>myFunction(1.123)</ol>
+                        <ol>myFunction(1048)</ol>
+                        <ol>myFunction(10.48)</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>true</ol>
+                        <ol>false</ol>
+                        <ol>true</ol>
+                        <ol>false</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction4(a) {
+                            <br>
+                            return Number.isInteger(a)
+                            <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <hr>
+            <!-- Ejercicio 5 -->
+            <div class="Ejercicio">
+                <a name="E5"></a>
+                <h2>Check whether a string contains another string and concatenate</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes two strings, say a and b, as arguments
+                        <br>
+                        // If a contains b, append b to the beginning of a
+                        <br>
+                        // If not, append it to the end
+                        <br>
+                        // Return the concatenation
+                        <br>
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction("cheese", "cake")</ol>
+                        <ol>myFunction("lips", "s")</ol>
+                        <ol>myFunction("Java", "script")</ol>
+                        <ol>myFunction(" think, therefore I am","I")</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>"cheesecake"</ol>
+                        <ol>"slips"</ol>
+                        <ol>"Javascript"</ol>
+                        <ol>"I think, therefore I am"</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction5(a) {
+                            <br>
+                            return a.indexOf(b) === -1 ? a + b : b + a
+                            <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <hr>
+            <!-- Ejercicio 6 -->
+            <div class="Ejercicio">
+                <a name="E6"></a>
+                <h2>Find the correct word by incrementing letters in alphabet</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes a string as argument
+                        <br>
+                        // As it is, the string has no meaning
+                        <br>
+                        // Increment each letter to the next letter in the alphabet
+                        <br>
+                        // Return the correct word
+                        <br>
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction('bnchmf')</ol>
+                        <ol>myFunction('bgddrd')</ol>
+                        <ol>myFunction('sdrshmf')</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>'coding'</ol>
+                        <ol>'cheese'</ol>
+                        <ol>'testing'</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction6(a) {
+                            <br>
+                            let newString = ""
+                            <br>
+                            for ( let i=0 ; i < string.length ; i++ ) { <br>
+                                let auxChar=string.charCodeAt (i) auxChar=auxChar + 1
+                                <br>
+                                newString=newString + String.fromCharCode(auxChar) }
+                                <br>
+                                return newString
+                                <br>
+                                }
+                        </p>
+                    </div>
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>function myFunction6(a) {
+                            <br>
+                            const arr = [...str];
+                            <br>
+                            const correctedArray = arr.map(e => String.fromCharCode(e.charCodeAt()+1));
+                            <br>
+                            return correctedArray.join('');
+                            <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <hr>
+            <!-- Ejercicio 7 -->
+            <div class="Ejercicio">
+                <a name="E7"></a>
+                <h2>Find next higher natural number that is divisble by y</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes two numbers, say x and y, as arguments
+                        <br>
+                        // Check if x is divisible by y
+                        <br>
+                        // If yes, return x
+                        <br>
+                        // If not, return the next higher natural number that is divisible by y
+                        <br>
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction(1, 23)</ol>
+                        <ol>myFunction(23, 23)</ol>
+                        <ol>myFunction(7, 3)</ol>
+                        <ol>myFunction(-5, 7)</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>23</ol>
+                        <ol>23</ol>
+                        <ol>9</ol>
+                        <ol>0</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction7(x, y) {
+                            <br>
+                            if (x % y == 0) {
+                            <br>
+                            return x ;
+                            <br>
+                            } else if (x < 0) { <br>
+                                return 0 ;
+                                <br>
+                                } else if (x < y) { <br>
+                                    return y ;
+                                    <br>
+                                    } else {
+                                    <br>
+                                    return x + ( y - ( x % y )) ;
+                                    <br>
+                                    }}
+                                    <br>
+                        </p>
+                    </div>
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>function myFunction6(a) {
+                            <br>
+                            while (x % y !== 0) x++;
+                            <br>
+                            return x;
+                            }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <hr>
+            <!-- Ejercicio 8 -->
+            <div class="Ejercicio">
+                <a name="E8"></a>
+                <h2>Return the percentage of a number</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes an object with the properties number and percentage as argument
+                        <br>
+                        // Return the given percentage of the number
+                        <br>
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction({number: 100, percentage: 50})</ol>
+                        <ol>myFunction({number: 777, percentage: 2})</ol>
+                        <ol>myFunction({number: 500, percentage: 99})</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>50</ol>
+                        <ol>15.54</ol>
+                        <ol>495</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction8 ({number: a, percentage: b}) {
+                            <br>
+                            return b * a / 100
+                            <br>
+                            }
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <hr>
+            <!-- Ejercicio 9 -->
+            <div class="Ejercicio">
+                <a name="E9"></a>
+                <h2>Split a number into its digits</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes a number as argument
+                        <br>
+                        // The function should split the number into its individual digits and return them in an array
+                        <br>
+                        // Tipp: you might want to change the type of the number for the splitting
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction(10)</ol>
+                        <ol>myFunction(931)</ol>
+                        <ol>myFunction(193278)</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>[1,0]</ol>
+                        <ol>[9,3,1]</ol>
+                        <ol>[1,9,3,2,7,8]</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction9( number ) {
+                            <br>
+                            let string = number.toString();
+                            <br>
+                            let array = [...string];
+                            <br>
+                            return array.map ( e => parseInt(e))
+                            <br>
+                            }
+                            <br>
+                        </p>
+                    </div>
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>function myFunction9(num) {
+                            <br>
+                            const string = num + '';
+                            <br>
+                            const strings = string.split('');
+                            <br>
+                            return strings.map(digit => Number(digit))
+                            <br>
+                            }
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <hr>
+            <!-- Ejercicio 10 -->
+            <div class="Ejercicio">
+                <a name="E10"></a>
+                <h2>Clear up the chaos behind these strings</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // It seems like something happened to these strings
+                        <br>
+                        // Can you figure out how to clear up the chaos?
+                        <br>
+                        // Write a function that joins these strings together such that they form the words
+                        'Javascript',
+                        'Countryside', and 'Downtown'!
+                        <br>
+                        // You might want to apply basic JS string methods such as replace(), split(), slice() etc
+                        <br>
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction('java', 'tpi%rcs')</ol>
+                        <ol>myFunction('c%ountry', 'edis')</ol>
+                        <ol>myFunction('down', 'nw%ot')</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <div class="resolucion">
+                            <h4>Solution</h4>
+                            <ol>'Javascript'</ol>
+                            <ol>'Countryside'</ol>
+                            <ol>'Downtown'</ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction10(uno, dos) {
+                            <br>
+                            uno = uno.replaceAll('%','');
+                            <br>
+                            dos = dos.replaceAll('%','');
+                            <br>
+                            let newCharUno = '';
+                            <br>
+                            let newCharDos = '';
+                            <br>
+                            let inicio = dos.length - 1;
+                            <br>
+                            <!-- /* Recorro primer palabra */  -->
+                            <br>
+                            for (let i = 0; i < uno.length ; i++ ) { <br>
+                                if (i==0) {
+                                <br>
+                                newCharUno = newCharUno + uno.charAt(i).toUpperCase();
                                 <br>
                                 } else {
                                 <br>
-                                return x + ( y - ( x % y )) ;
+                                newCharUno = newCharUno + uno.charAt(i);}
                                 <br>
-                                }}
+                                }
                                 <br>
-                    </p>
-                </div>
-                <div class="resolucion">
-                    <h4>Resolution II</h4>
-                    <p>function myFunction6(a) {
-                        <br>
-                        while (x % y !== 0) x++;
-                        <br>
-                        return x;
-                        }
-                    </p>
-                </div>
-            </div>
-            <p><a href="#Menu">Volver al menú</a></p>
-        </div>
-        <hr>
-        <!-- Ejercicio 8 -->
-        <div class="Ejercicio">
-            <a name="E8"></a>
-            <h2>Return the percentage of a number</h2>
-            <div class="exerciseProblem">
-                <p>
-                    // Write a function that takes an object with the properties number and percentage as argument
-                    <br>
-                    // Return the given percentage of the number
-                    <br>
-                </p>
-            </div>
-            <div class="tablaEjemplos">
-                <div class="columnaProblem">
-                    <h4>Example</h4>
-                    <ol>myFunction({number: 100, percentage: 50})</ol>
-                    <ol>myFunction({number: 777, percentage: 2})</ol>
-                    <ol>myFunction({number: 500, percentage: 99})</ol>
-                </div>
-                <div class="resolucionProblem">
-                    <h4>Solution</h4>
-                    <ol>50</ol>
-                    <ol>15.54</ol>
-                    <ol>495</ol>
-                </div>
-            </div>
-            <div class="resolucionExercise">
-                <div class="resolucion">
-                    <h4>Resolution</h4>
-                    <p>function myFunction8 ({number: a, percentage: b}) {
-                        <br>
-                        return b * a / 100
-                        <br>
-                        }
-                        <br>
-                    </p>
-                </div>
-            </div>
-            <p><a href="#Menu">Volver al menú</a></p>
-        </div>
-        <hr>
-        <!-- Ejercicio 9 -->
-        <div class="Ejercicio">
-            <a name="E9"></a>
-            <h2>Split a number into its digits</h2>
-            <div class="exerciseProblem">
-                <p>
-                    // Write a function that takes a number as argument
-                    <br>
-                    // The function should split the number into its individual digits and return them in an array
-                    <br>
-                    // Tipp: you might want to change the type of the number for the splitting
-                </p>
-            </div>
-            <div class="tablaEjemplos">
-                <div class="columnaProblem">
-                    <h4>Example</h4>
-                    <ol>myFunction(10)</ol>
-                    <ol>myFunction(931)</ol>
-                    <ol>myFunction(193278)</ol>
-                </div>
-                <div class="resolucionProblem">
-                    <h4>Solution</h4>
-                    <ol>[1,0]</ol>
-                    <ol>[9,3,1]</ol>
-                    <ol>[1,9,3,2,7,8]</ol>
-                </div>
-            </div>
-            <div class="resolucionExercise">
-                <div class="resolucion">
-                    <h4>Resolution</h4>
-                    <p>function myFunction9( number ) {
-                        <br>
-                        let string = number.toString();
-                        <br>
-                        let array = [...string];
-                        <br>
-                        return array.map ( e => parseInt(e))
-                        <br>
-                        }
-                        <br>
-                    </p>
-                </div>
-                <div class="resolucion">
-                    <h4>Resolution II</h4>
-                    <p>function myFunction9(num) {
-                        <br>
-                        const string = num + '';
-                        <br>
-                        const strings = string.split('');
-                        <br>
-                        return strings.map(digit => Number(digit))
-                        <br>
-                        }
-                        <br>
-                    </p>
-                </div>
-            </div>
-            <p><a href="#Menu">Volver al menú</a></p>
-        </div>
-        <hr>
-        <!-- Ejercicio 10 -->
-        <div class="Ejercicio">
-            <a name="E10"></a>
-            <h2>Clear up the chaos behind these strings</h2>
-            <div class="exerciseProblem">
-                <p>
-                    // It seems like something happened to these strings
-                    <br>
-                    // Can you figure out how to clear up the chaos?
-                    <br>
-                    // Write a function that joins these strings together such that they form the words 'Javascript',
-                    'Countryside', and 'Downtown'!
-                    <br>
-                    // You might want to apply basic JS string methods such as replace(), split(), slice() etc
-                    <br>
-                </p>
-            </div>
-            <div class="tablaEjemplos">
-                <div class="columnaProblem">
-                    <h4>Example</h4>
-                    <ol>myFunction('java', 'tpi%rcs')</ol>
-                    <ol>myFunction('c%ountry', 'edis')</ol>
-                    <ol>myFunction('down', 'nw%ot')</ol>
-                </div>
-                <div class="resolucionProblem">
-                    <div class="resolucion">
-                        <h4>Solution</h4>
-                        <ol>'Javascript'</ol>
-                        <ol>'Countryside'</ol>
-                        <ol>'Downtown'</ol>
+                                <!-- /* Recorro segunda palabra */  -->
+                                <br>
+                                for (let j = inicio; j > -1 ; j-- ) {
+                                <br>
+                                newCharDos = newCharDos + dos.charAt(j);
+                                <br>
+                                }
+                                <br>
+                                return newCharUno + newCharDos;
+                                <br>
+                                }
+                                <br>
+                        </p>
                     </div>
-                </div>
-            </div>
-            <div class="resolucionExercise">
-                <h4>Resolution</h4>
-                <p>function myFunction10(uno, dos) {
-                    <br>
-                    uno = uno.replaceAll('%','');
-                    <br>
-                    dos = dos.replaceAll('%','');
-                    <br>
-                    let newCharUno = '';
-                    <br>
-                    let newCharDos = '';
-                    <br>
-                    let inicio = dos.length - 1;
-                    <br>
-                    <!-- /* Recorro primer palabra */  -->
-                    <br>
-                    for (let i = 0; i < uno.length ; i++ ) { <br>
-                        if (i==0) {
-                        <br>
-                        newCharUno = newCharUno + uno.charAt(i).toUpperCase();
-                        <br>
-                        } else {
-                        <br>
-                        newCharUno = newCharUno + uno.charAt(i);}
-                        <br>
-                        }
-                        <br>
-                        <!-- /* Recorro segunda palabra */  -->
-                        <br>
-                        for (let j = inicio; j > -1 ; j-- ) {
-                        <br>
-                        newCharDos = newCharDos + dos.charAt(j);
-                        <br>
-                        }
-                        <br>
-                        return newCharUno + newCharDos;
-                        <br>
-                        }
-                        <br>
-                </p>
-                <br>
-                <h4>Resolution II</h4>
-                <p>function myFunction10(a, b) {
-                    <br>
-                    const first = a.split('').map(part => part.replace('%', '')).join('');
-                    <br>
-                    const second = b.split('').reverse().map(part => part.replace('%', '')).join('');
-                    <br>
-                    return first.charAt(0).toUpperCase() + first.slice(1) + second
-                    <br>
-                    }
-                    <br>
-                </p>
-            </div>
-            <p><a href="#Menu">Volver al menú</a></p>
-        </div>
-        <hr>
-        <!-- Ejercicio 11 -->
-        <div class="Ejercicio">
-            <a name="E11"></a>
-            <h2>Round a number to 2 decimal places</h2>
-            <div class="exerciseProblem">
-                <p>
-                    // Write a function that takes a number as argument
-                    <br>
-                    // Round the number to the 2nd digit after the comma
-                    <br>
-                    // Return the rounded number
-                </p>
-            </div>
-            <div class="tablaEjemplos">
-                <div class="columnaProblem">
-                    <h4>Example</h4>
-                    <ol>myFunction(2.12397)</ol>
-                    <ol>myFunction(3.136)</ol>
-                    <ol>myFunction(1.12397)</ol>
-                    <ol>myFunction(26.1379)</ol>
-                </div>
-                <div class="resolucionProblem">
-                    <h4>Solution</h4>
-                    <ol>2.12</ol>
-                    <ol>3.14</ol>
-                    <ol>1.12</ol>
-                    <ol>26.14</ol>
-                </div>
-            </div>
-            <div class="resolucionExercise">
-                <div class="resolucion">
-                    <h4>Resolution</h4>
-                    <p>function myFunction11 (num) {
-                        <br>
-                        const first = num.toString().split('.')[0];
-                        <br>
-                        let second = num.toString().split('.')[1];
-                        <br>
-                        const cantCeros = second.length-2;
-                        <br>
-                        second = Math.round( second / parseInt ("1"+"0".repeat(cantCeros) ) ).toString();
-                        <br>
-                        return parseFloat(first+'.'+second)
-                        <br>
-                        console.log(`first+second = ${numFinal} que es del tipo: ${typeof(numFinal)}`);
-                        <br>
-                        }
-                    </p>
-                    <br>
-                </div>
-                <div class="resolucion">
-                    <h4>Resolution II</h4>
-                    <p>function myFunction11(num) {
-                        <br>
-                        return Number(num.toFixed(2));
-                        <br>
-                        }
-                    </p>
-                </div>
-            </div>
-            <p><a href="#Menu">Volver al menú</a></p>
-        </div>
-        <hr>
-        <!-- Ejercicio 12 -->
-        <div class="Ejercicio">
-            <a name="E12"></a>
-            <h2>How many times does a character occur?</h2>
-            <div class="exerciseProblem">
-                <p>
-                    // Write a function that takes a two strings as arguments
-                    <br>
-                    // Return the number of times the first string occurs in the second string
-                </p>
-            </div>
-            <div class="tablaEjemplos">
-                <div class="columnaProblem">
-                    <h4>Example</h4>
-                    <ol>myFunction('m', 'How many times does the character occur in this sentence?')</ol>
-                    <ol>myFunction('h', 'How many times does the character occur in this sentence?')</ol>
-                    <ol>myFunction('?', 'How many times does the character occur in this sentence?')</ol>
-                    <ol>myFunction('z', 'How many times does the character occur in this sentence?')</ol>
-                </div>
-                <div class="resolucionProblem">
-                    <h4>Solution</h4>
-                    <ol>2</ol>
-                    <ol>4</ol>
-                    <ol>1</ol>
-                    <ol>0</ol>
-                </div>
-            </div>
-            <div class="resolucionExercise">
-                <div class="resolucion">
-                    <h4>Resolution</h4>
-                    <p>function myFunction12(char, string2) {
-                        <br>
-                        return string2.split("").filter( carac => carac==char || carac==char.toUpperCase()).length
-                        <br>
-                        }
-                    </p>
-                    <br>
-                </div>
-                <div class="resolucion">
-                    <h4>Resolution II</h4>
-                    <p>function myFunction12(char, string) {
-                        <br>
-                        return string.toLowerCase().split(char).length - 1
-                        <br>
-                        }
-                    </p>
-                </div>
-            </div>
-            <p><a href="#Menu">Volver al menú</a></p>
-        </div>
-        <hr>
-        <!-- Ejercicio 13 -->
-        <div class="Ejercicio">
-            <a name="E13"></a>
-            <h2>Return the next higher prime number</h2>
-            <div class="exerciseProblem">
-                <p>
-                    // This challenge is a little bit more complex
-                    <br>
-                    // Write a function that takes a number as argument
-                    <br>
-                    // If the number is prime, return the number
-                    <br>
-                    // If not, return the next higher prime number
-                </p>
-            </div>
-            <div class="tablaEjemplos">
-                <div class="columnaProblem">
-                    <h4>Example</h4>
-                    <ol>myFunction(38)</ol>
-                    <ol>myFunction(7)</ol>
-                    <ol>myFunction(115)</ol>
-                    <ol>myFunction(2000)</ol>
-                </div>
-                <div class="resolucionProblem">
-                    <h4>Solution</h4>
-                    <ol>41</ol>
-                    <ol>7</ol>
-                    <ol>127</ol>
-                    <ol>2003</ol>
-                </div>
-            </div>
-            <div class="resolucionExercise">
-                <div class="resolucion">
-                    <h4>Resolution</h4>
-                    <p>function myFunction(num) {
-                        <br>
-                        return esPrimo(num)? num : proximoPrimo(num);
-                        <br>
-                       function esPrimo(num) {
-                           <br>
-                            let cantDivisores = 0;
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>function myFunction10(a, b) {
                             <br>
-                            for (let i = 0; i<=num ; i++) {
-                                <br>
-                                (num%i===0)? ++cantDivisores: 0;
-                                <br>
+                            const first = a.split('').map(part => part.replace('%', '')).join('');
+                            <br>
+                            const second = b.split('').reverse().map(part => part.replace('%', '')).join('');
+                            <br>
+                            return first.charAt(0).toUpperCase() + first.slice(1) + second
+                            <br>
                             }
                             <br>
-                            return (cantDivisores==2||num==1);
-                            <br>
-                        }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <hr>
+            <!-- Ejercicio 11 -->
+            <div class="Ejercicio">
+                <a name="E11"></a>
+                <h2>Round a number to 2 decimal places</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes a number as argument
                         <br>
-                        function proximoPrimo(num) {
+                        // Round the number to the 2nd digit after the comma
+                        <br>
+                        // Return the rounded number
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction(2.12397)</ol>
+                        <ol>myFunction(3.136)</ol>
+                        <ol>myFunction(1.12397)</ol>
+                        <ol>myFunction(26.1379)</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>2.12</ol>
+                        <ol>3.14</ol>
+                        <ol>1.12</ol>
+                        <ol>26.14</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction11 (num) {
                             <br>
-                            while (!esPrimo(num)) {
+                            const first = num.toString().split('.')[0];
+                            <br>
+                            let second = num.toString().split('.')[1];
+                            <br>
+                            const cantCeros = second.length-2;
+                            <br>
+                            second = Math.round( second / parseInt ("1"+"0".repeat(cantCeros) ) ).toString();
+                            <br>
+                            return parseFloat(first+'.'+second)
+                            <br>
+                            console.log(`first+second = ${numFinal} que es del tipo: ${typeof(numFinal)}`);
+                            <br>
+                            }
+                        </p>
+                        <br>
+                    </div>
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>function myFunction11(num) {
+                            <br>
+                            return Number(num.toFixed(2));
+                            <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <hr>
+            <!-- Ejercicio 12 -->
+            <div class="Ejercicio">
+                <a name="E12"></a>
+                <h2>How many times does a character occur?</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes a two strings as arguments
+                        <br>
+                        // Return the number of times the first string occurs in the second string
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction('m', 'How many times does the character occur in this sentence?')</ol>
+                        <ol>myFunction('h', 'How many times does the character occur in this sentence?')</ol>
+                        <ol>myFunction('?', 'How many times does the character occur in this sentence?')</ol>
+                        <ol>myFunction('z', 'How many times does the character occur in this sentence?')</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>2</ol>
+                        <ol>4</ol>
+                        <ol>1</ol>
+                        <ol>0</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction12(char, string2) {
+                            <br>
+                            return string2.split("").filter( carac => carac==char || carac==char.toUpperCase()).length
+                            <br>
+                            }
+                        </p>
+                        <br>
+                    </div>
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>function myFunction12(char, string) {
+                            <br>
+                            return string.toLowerCase().split(char).length - 1
+                            <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <hr>
+            <!-- Ejercicio 13 -->
+            <div class="Ejercicio">
+                <a name="E13"></a>
+                <h2>Return the next higher prime number</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // This challenge is a little bit more complex
+                        <br>
+                        // Write a function that takes a number as argument
+                        <br>
+                        // If the number is prime, return the number
+                        <br>
+                        // If not, return the next higher prime number
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction(38)</ol>
+                        <ol>myFunction(7)</ol>
+                        <ol>myFunction(115)</ol>
+                        <ol>myFunction(2000)</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>41</ol>
+                        <ol>7</ol>
+                        <ol>127</ol>
+                        <ol>2003</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction(num) {
+                            <br>
+                            return esPrimo(num)? num : proximoPrimo(num);
+                            <br>
+                            function esPrimo(num) {
+                            <br>
+                            let cantDivisores = 0;
+                            <br>
+                            for (let i = 0; i<=num ; i++) { <br>
+                                (num%i===0)? ++cantDivisores: 0;
+                                <br>
+                                }
+                                <br>
+                                return (cantDivisores==2||num==1);
+                                <br>
+                                }
+                                <br>
+                                function proximoPrimo(num) {
+                                <br>
+                                while (!esPrimo(num)) {
                                 <br>
                                 ++num;
                                 <br>
+                                }
+                                <br>
+                                return num;
+                                <br>
+                                }
+                                <br>
+                                }
+                        </p>
+                    </div>
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>function myFunction( input ) {
+                            <br>
+                            function isPrime(num) {
+                            <br>
+                            for (let i = 2; i <= Math.sqrt(num); i++) { <br>
+                                if (num % i === 0) return false;
+                                <br>
+                                }
+                                <br>
+                                return num > 1;
+                                <br>
+                                }
+                                <br>
+                                let n = input;
+                                <br>
+                                while (!isPrime(n)) n++;
+                                <br>
+                                return n
+                                <br>
+                                }
+                                <br>
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+        </div>
+        <!-- EXERCISE ARRAY -->
+        <div id="exerciseArray">
+            <!-- Ejercicio 1 -->
+            <div class="Ejercicio">
+                <a name="AE1"></a>
+                <h2>Sort an array of strings alphabetically</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes an array of strings as argument.
+                        <br>
+                        // It should return the array with its values sorted alphabetically
+                        <br>
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction(['b', 'c', 'd', 'a'])</ol>
+                        <ol>myFunction(['z', 'c', 'd', 'a', 'y', 'a', 'w'])</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>['a', 'b', 'c', 'd']</ol>
+                        <ol>['a', 'a', 'c', 'd', 'w', 'y', 'z']</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction (array) {
+                            <br>
+                            return array.sort();
+                            <br>
                             }
                             <br>
-                            return num;
-                            <br>
-                        }
-                        <br>
-                    }
-                    </p>
+                        </p>
+                    </div>
                 </div>
-                <div class="resolucion">
-                    <h4>Resolution II</h4>
-                    <p>function myFunction( input ) {
-                        <br>
-                        function isPrime(num) {
-                            <br>
-                          for (let i = 2; i <= Math.sqrt(num); i++) {
-                              <br>
-                            if (num % i === 0) return false;
-                            <br>
-                          }
-                          <br>
-                          return num > 1;
-                          <br>
-                        }
-                        <br>
-                       let n = input;
-                       <br>
-                       while (!isPrime(n)) n++;
-                       <br>
-                      return n
-                      <br>
-                      }
-                      <br>
-                    </p>
-                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
             </div>
-            <p><a href="#Menu">Volver al menú</a></p>
+            <!-- Ejercicio 2 -->
+            <div class="Ejercicio">
+                <a name="AE2"></a>
+                <h2>Sort an array of numbers in descending order</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes an array of numbers as argument
+                        <br>
+                        // It should return an array with the numbers sorted in descending order
+                        <br>
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction([1,3,2])</ol>
+                        <ol>myFunction([4,2,3,1])</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>[3,2,1]</ol>
+                        <ol>[4,3,2,1]</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction (array) {
+                            <br>
+                            return array.sort((a,b)=> b-a);
+                            <br>
+                            }
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <!-- Ejercicio 3 -->
+            <div class="Ejercicio">
+                <a name="AE3"></a>
+                <h2>Return the average of an array of numbers</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes an array of numbers as argument
+                        <br>
+                        // It should return the average of the numbers
+                        <br>
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction([10,100,40])</ol>
+                        <ol>myFunction([10,100,1000])</ol>
+                        <ol>myFunction([-50,0,50,200])</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>50</ol>
+                        <ol>370</ol>
+                        <ol>50</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction (array) {
+                            <br>
+                            acum2 = 0;
+                            <br>
+                            array.forEach(elem => acum2 += elem);
+                            <br>
+                            return acum2/array.length
+                            <br>
+                            }
+                            <br>
+                        </p>
+                    </div>
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>function myFunction( input ) {
+                            <br>
+                            return input.reduce((acc, cur) => acc + cur, 0) / input.length
+                            <br>
+                            }
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <!-- Ejercicio 4 -->
+            <div class="Ejercicio">
+                <a name="AE4"></a>
+                <h2>Remove a specific array element</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes an array and a value as argument
+                        <br>
+                        // The function should clean the array from all occurrences of the given value and return the
+                        cleaned version
+                        <br>
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction([1,2,3], 2)</ol>
+                        <ol>myFunction([1,2,'2'], '2')</ol>
+                        <ol>myFunction([false,'2',1], false)</ol>
+                        <ol>myFunction([1,2,'2',1], 1)</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>[1, 3]</ol>
+                        <ol>[1, 2]</ol>
+                        <ol>['2', 1]</ol>
+                        <ol>[2, '2']</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction (array, value) {
+                            <br>
+                            return array.filter (elem => elem!==value)
+                            <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <!-- Ejercicio 5 -->
+            <div class="Ejercicio">
+                <a name="AE5"></a>
+                <h2>Check if all array elements are equal</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes an array as argument
+                        <br>
+                        // It should return true if all elements in the array are equal
+                        <br>
+                        // It should return false otherwise
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction([true, true, true, true])</ol>
+                        <ol>myFunction(['test', 'test', 'test'])</ol>
+                        <ol>myFunction([1,1,1,2])</ol>
+                        <ol>myFunction(['10',10,10,10])</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>true</ol>
+                        <ol>true</ol>
+                        <ol>false</ol>
+                        <ol>false</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction (array) {
+                            <br>
+                            return array.every(elem => elem === array
+                            <br>
+                            [0])
+                            <br>
+                            }
+                        </p>
+                    </div>
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>function myFunction( input ) {
+                            <br>
+                            return new Set(input).size === 1
+                            <br>
+                            }
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <!-- Ejercicio 6 -->
+            <div class="Ejercicio">
+                <a name="AE6"></a>
+                <h2>Return last n array elements</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes an array and a number (n) as arguments
+                        <br>
+                        // It should return the last n array elements
+                        <br>
+                        // If the array has less than n elements, return all
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction([1, 2, 3, 4, 5], 2)</ol>
+                        <ol>myFunction([1, 2, 3], 6)</ol>
+                        <ol>myFunction([1, 2, 3, 4, 5, 6, 7, 8], 3)</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>[ 4, 5 ]</ol>
+                        <ol>[ 1, 2, 3 ]</ol>
+                        <ol>[ 6, 7, 8 ]</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction (array,num){
+                            <br>
+                            return (num>array.length)? array : array.slice(array.length-num)
+                            <br>
+                            }
+                        </p>
+                    </div>
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>function myFunction(arr, n) {
+                            <br>
+                            return arr.slice(-n);
+                            <br>
+                            }
+                            <br>
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <!-- Ejercicio 7 -->
+            <div class="Ejercicio">
+                <a name="AE7"></a>
+                <h2>Create a range of numbers</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes two numbers, say min and max, as arguments
+                        <br>
+                        // Return an array of numbers in the range min to max
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction(2, 10)</ol>
+                        <ol>myFunction(1, 3)</ol>
+                        <ol>myFunction(-5, 5)</ol>
+                        <ol>myFunction(2, 7)</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>[2, 3, 4, 5, 6, 7, 8, 9, 10]</ol>
+                        <ol>[1, 2, 3]</ol>
+                        <ol>[-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]</ol>
+                        <ol>[2, 3, 4, 5, 6, 7]</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction (min,max){
+                            <br>
+                            let arr = [];
+                            <br>
+                            for (let i = min; i<= max; i++) { <br>
+                                arr.push(i);
+                                <br>
+                                }
+                                <br>
+                                return arr;
+                                <br>
+                                }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <!-- Ejercicio 8 -->
+            <div class="Ejercicio">
+                <a name="AE8"></a>
+                <h2>Return last n array elements</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes an array and a number (n) as arguments
+                        <br>
+                        // It should return the last n array elements
+                        // If the array has less than n elements, return all
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction([1, 2, 3, 4, 5], 2)</ol>
+                        <ol>myFunction([1, 2, 3], 6)</ol>
+                        <ol>myFunction([1, 2, 3, 4, 5, 6, 7, 8], 3)</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>[ 4, 5 ]</ol>
+                        <ol>[1, 2, 3]</ol>
+                        <ol>[ 6, 7, 8 ]</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction (array , num) {
+                            <br>
+                            return (num > array.length)? array : array.splice(array.length - num) ;
+                            <br>
+                            }
+                        </p>
+                    </div>
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>function myFunction(arr, n) {
+                            <br>
+                            return arr.slice(-n);
+                            <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <!-- Ejercicio 9 -->
+            <div class="Ejercicio">
+                <a name="AE9"></a>
+                <h2>Return the longest string from an array of strings</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes an array of strings as argument
+                        <br>
+                        // It should return the longest string
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction(['help', 'me'])</ol>
+                        <ol>myFunction(['I', 'need', 'candy'])</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>'help'</ol>
+                        <ol>'candy'</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction (arrStrings) {
+                            <br>
+                            return arrStrings.sort((a,b) => b.length - a.length)[0]
+                            <br>
+                            }
+                        </p>
+                    </div>
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>function myFunction( input ) {
+                            <br>
+                            return input.reduce((a, b) => a.length <= b.length ? b : a) <br>
+                                }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <!-- Ejercicio 10 -->
+            <div class="Ejercicio">
+                <a name="AE10"></a>
+                <h2>Sum up all array elements with values greater than</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes an array and a number, say num, as arguments
+                        <br>
+                        // Sum up all array elements with a value greater than num
+                        <br>
+                        // Return the sum
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction([1, 2, 3, 4, 5, 6, 7], 2)</ol>
+                        <ol>myFunction([-10, -11, -3, 1, -4], -3)</ol>
+                        <ol>myFunction([78, 99, 100, 101, 401], 99)</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>25</ol>
+                        <ol>1</ol>
+                        <ol>602</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction (arr,num) {
+                            <br>
+                            return arr.filter(elem => elem > num).reduce((a,b) => a+b,0)
+                            <br>
+                            }
+                        </p>
+                    </div>
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>function myFunction(arr, num) {
+                            <br>
+                            return arr.reduce((sum, cur) => {
+                            <br>
+                            if (cur > num) return sum + cur;
+                            <br>
+                            return sum;
+                            <br>
+                            }, 0);
+                            <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <!-- Ejercicio 11 -->
+            <div class="Ejercicio">
+                <a name="AE11"></a>
+                <h2>Merge an arbitrary number of arrays</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes arguments an arbitrary number of arrays
+                        <br>
+                        // It should return an array containing the values of all arrays
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction([1, 2, 3], [4, 5, 6])</ol>
+                        <ol>myFunction(['a', 'b', 'c'], [4, 5, 6])</ol>
+                        <ol>myFunction([true, true], [1, 2], ['a', 'b'])</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>[1, 2, 3, 4, 5, 6]</ol>
+                        <ol>['a', 'b', 'c', 4, 5, 6]</ol>
+                        <ol>[true, true, 1, 2, 'a', 'b']</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>
+                        </p>
+                    </div>
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
+            <!-- Ejercicio 12 -->
+            <div class="Ejercicio">
+                <a name="AE12"></a>
+                <h2>Merge two arrays with duplicate values</h2>
+                <div class="exerciseProblem">
+                    <p>
+                        // Write a function that takes two arrays as arguments
+                        <br>
+                        // Merge both arrays and remove duplicate values
+                        <br>
+                        // Sort the merge result in ascending order
+                        <br>
+                        // Return the resulting array
+                    </p>
+                </div>
+                <div class="tablaEjemplos">
+                    <div class="columnaProblem">
+                        <h4>Example</h4>
+                        <ol>myFunction([1, 2, 3], [3, 4, 5])</ol>
+                        <ol>myFunction([-10, 22, 333, 42], [-11, 5, 22, 41, 42])</ol>
+                    </div>
+                    <div class="resolucionProblem">
+                        <h4>Solution</h4>
+                        <ol>[ 1, 2, 3, 4, 5 ]</ol>
+                        <ol>[ -11, -10, 5, 22, 41, 42, 333]</ol>
+                    </div>
+                </div>
+                <div class="resolucionExercise">
+                    <div class="resolucion">
+                        <h4>Resolution</h4>
+                        <p>function myFunction (arr1, arr2) {
+                            <br>
+                            return Array.from(new Set(arr1.concat(arr2))).sort(
+                            <br>
+                            (a,b) => a -b )
+                            <br>
+                            }
+                        </p>
+                    </div>
+                    <div class="resolucion">
+                        <h4>Resolution II</h4>
+                        <p>function myFunction(first, second) {
+                            <br>
+                            return [...new Set([...first, ...second])].sort((a, b) => a - b);
+                            <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+                <p><a href="#Menu">Volver al menú</a></p>
+            </div>
         </div>
         <hr>
     </main>
+
     <footer>| Copyright© - Derechos reservados 2021 | fedelopez89 |</footer>
+
+    <!-- Javascript -->
 </body>
 
 </html>
